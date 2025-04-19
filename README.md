@@ -4,8 +4,9 @@ Dieses Repository enthält Vorlagen und Richtlinien zur Strukturierung und Verwa
 
 ## Inhalt
 
-* **`PROJEKTPLAN.md`**: Eine umfassende Vorlage zur Planung, Verfolgung und Dokumentation von Projektzielen, Aufgaben, Entscheidungen und Fortschritten.
-* **`GIT_WORKFLOW.md`**: Detaillierte Richtlinien für einen strukturierten Git-Workflow (basierend auf Gitflow), inklusive Branching-Modell, Commit-Konventionen und Release-Prozess.
+* **[`PROJEKTPLAN.md`](PROJEKTPLAN.md)**: Eine umfassende Vorlage zur Planung, Verfolgung und Dokumentation von Projektzielen, Aufgaben, Entscheidungen und Fortschritten.
+* **[`GIT_WORKFLOW.md`](GIT_WORKFLOW.md)**: Detaillierte Richtlinien für einen strukturierten Git-Workflow (basierend auf Gitflow), inklusive Branching-Modell, Commit-Konventionen und Release-Prozess.
+* **[`KI_RICHTLINIEN_PROMPTS.md`](KI_RICHTLINIEN_PROMPTS.md)**: Richtlinien für die Zusammenarbeit mit der KI und eine Sammlung von Beispiel-Prompts.
 
 ## Nutzung
 

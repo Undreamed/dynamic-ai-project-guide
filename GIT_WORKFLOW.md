@@ -1,14 +1,13 @@
 # Git Workflow Richtlinien
 
-Dieses Dokument beschreibt den empfohlenen Git-Workflow, um eine konsistente und nachvollziehbare Entwicklung sicherzustellen.
+Dieses Dokument beschreibt den empfohlenen Git-Workflow, um eine konsistente und nachvollziehbare Entwicklung sicherzustellen. Es wird im [Projektplan](PROJEKTPLAN.md) referenziert.
 
 ## Projekt-Richtlinien (Ergänzung)
 
 * **Formatierung dieses Dokuments:** Dieses Dokument (die Git Workflow Richtlinien) wird als Markdown-Text innerhalb eines Immersive-Blocks gepflegt.
 * **Commit Messages:** Commits folgen dem Conventional Commits Standard.
-    * **Empfehlung bei Nutzung von VS Codium & Gemini Coder:** Um Konsistenz sicherzustellen, wird empfohlen, den Gemini Coder mit folgendem spezifischen Prompt zur Generierung der Commit Message zu verwenden:
-      > Generate a Git commit message for the staged changes using the Conventional Commits specification.  Format: <type>(scope): description  [optional body]  [optional footer]  Allowed types: feat, fix, chore, docs, style, refactor, test, perf. Rules: Use imperative, present tense for the description (e.g., 'add', not 'added'). No period at the end of the description. Keep it concise.
-* **Branch-Namen:** Feature-, Bugfix- und Hotfix-Namen sollten kurz, deskriptiv und idealerweise auf eine Aufgabe oder ein Ticket (z.B. aus dem Projektplan oder Issue Tracker) bezogen sein. Verwende Kleinbuchstaben und Bindestriche.
+    * **Empfehlung bei Nutzung von VS Codium & Gemini Coder:** Um Konsistenz sicherzustellen, wird empfohlen, den Gemini Coder mit folgendem spezifischen Prompt zur Generierung der Commit Message zu verwenden: > Generate a Git commit message for the staged changes using the Conventional Commits specification.  Format: <type>(scope): description  [optional body]  [optional footer]  Allowed types: feat, fix, chore, docs, style, refactor, test, perf. Rules: Use imperative, present tense for the description (e.g., 'add', not 'added'). No period at the end of the description. Keep it concise.
+* **Branch-Namen:** Feature-, Bugfix- und Hotfix-Namen sollten kurz, deskriptiv und idealerweise auf eine Aufgabe oder ein Ticket (z.B. aus dem [Projektplan](PROJEKTPLAN.md) oder Issue Tracker) bezogen sein. Verwende Kleinbuchstaben und Bindestriche.
 
 ## Branching-Modell (Gitflow - Erweitert)
 
@@ -26,7 +25,7 @@ Wir verwenden eine an Gitflow angelehnte Version mit den folgenden Hauptbranches
 * **Zwingend erforderlich:** Alle Merges in die Branches `dev` und `main` (einschließlich Bugfixes, Hotfixes, Release-Branches) **müssen** über einen Pull Request (GitHub/GitLab/etc.) erfolgen. Direkte Pushes/Merges in diese Branches sind gesperrt/nicht erlaubt (außer ggf. durch Maintainer nach Hotfix-Prozess).
 * **Code Review:** Jeder PR/MR sollte mindestens von einer anderen Person überprüft werden (Code-Qualität, Funktionalität, Einhaltung von Richtlinien).
 * **CI/CD:** Idealerweise löst ein PR/MR automatische Checks aus (Linting, Tests, Build). Der Merge sollte erst nach erfolgreichen Checks erfolgen.
-* **Beschreibung:** PR/MRs sollten eine klare Beschreibung der Änderungen enthalten und ggf. auf zugehörige Issues oder Aufgaben im Projektplan verweisen.
+* **Beschreibung:** PR/MRs sollten eine klare Beschreibung der Änderungen enthalten und ggf. auf zugehörige Issues oder Aufgaben im [Projektplan](PROJEKTPLAN.md) verweisen.
 
 ## Workflow-Schritte
 
